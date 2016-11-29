@@ -1,0 +1,59 @@
+/* ************************************************** *
+ * VTM ACCORDION CSS
+ *
+ * Version: 1.0
+ * Author: Ricardo Hildebrand
+ * Email: ricardo.hildebrand@votum.de
+ * Date: 12/2016
+ * ************************************************** */
+
+.c-accordion{
+    margin-top: 96px;
+}
+
+.c-accordion__title{
+    position: relative;
+    float: none;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 32px;
+    margin-top: -64px;
+    border-bottom: 2px solid #000;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.c-accordion__title:after{
+    position: absolute;
+    content: url(../img/arrow-right-black.png);
+    display: inline-block;
+    right: 8px;
+    bottom: 0;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+
+.c-accordion__title.is-active{
+    border-color: transparent;
+}
+
+.c-accordion__title.is-active:after{
+    transform: rotate(0deg);
+}
+
+.c-accordion__description{
+    margin: 0;
+    padding: 32px 0;
+    font-weight: normal;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all 0.3s;
+}
+
+.c-accordion__description.is-open{
+    opacity: 1;
+    visibility: visible;
+}
