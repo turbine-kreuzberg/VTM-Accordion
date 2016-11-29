@@ -4,7 +4,7 @@ Simple and small Frontend Accordion Component in plain CSS and plain Javascript.
 
 ## Demo
 
-https://rawgit.com/votum/page-transitions/master/demo/index.html
+https://rawgit.com/votum/VTM-Accordion/master/index.html
 
 ## Getting Started
 
